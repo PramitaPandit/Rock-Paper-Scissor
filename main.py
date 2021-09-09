@@ -3,7 +3,7 @@
 import random
 
 #step1: Stating game instructions
-print('Rules of Rock-Paper-Scissor:\n Rock v/s Paper -> Paper wins \n Rock v/s Scissor -> Rock wins \n Scissor v/s Paper -> Scissor wins ')
+print('Rules of Rock-Paper-Scissor are as follows:\n Rock v/s Paper -> Paper wins \n Rock v/s Scissor -> Rock wins \n Scissor v/s Paper -> Scissor wins ')
 
 # Step2: Taking user input
 user = input('Enter your name: ')
