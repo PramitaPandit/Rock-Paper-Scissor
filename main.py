@@ -16,7 +16,7 @@ while True:
         print('Good luck ' + user) 
     else:
         while player_choice != 'a' or player_choice != 'b' or player_choice !=  'c':
-            player_choice = input('Invalid choice. Please enter your choice again: ')     
+            player_choice = input('Invalid choice. Please enter your choice again: ').lower()   
           
     # Step4: Initializing value of choice_name variable corresponding to the choice value
     if player_choice == 'a':
@@ -54,9 +54,9 @@ while True:
 
     #step8: Asking user wish to continue
     Option = input('Do you want to play again? \n 1. Yes \n 2. No \n')
-    while Option != 1 or Option != 2:
+    while Option < '1' or Option > '2':
         Option = input('Invalid choice. Please enter your choice again: ')
-    if Option == 1:
+    if Option == '1':
         print('Get ready for the next round!')
     else:
         break
