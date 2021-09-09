@@ -11,16 +11,13 @@ user = input('Enter your name: ')
 while True:
     player_choice = input('Enter a choice: \n a. Rock \n b. Paper \n c. Scissor \n ').lower()
 
-    # Step3: Checking for invalid input
-    while True:
-        if player_choice == 'a' or player_choice == 'b' or player_choice ==  'c':
-            print('Good luck ' + user) 
-            break
-        else:
-            print('Invalid choice. Please try again')
-
-    
-
+    # Step3: Checking for invalid input      
+    if player_choice == 'a' or player_choice == 'b' or player_choice ==  'c':
+        print('Good luck ' + user) 
+    else:
+        while player_choice != 'a' or player_choice != 'b' or player_choice !=  'c':
+            player_choice = input('Invalid choice. Please enter your choice again: ')     
+          
     # Step4: Initializing value of choice_name variable corresponding to the choice value
     if player_choice == 'a':
         player_choice_name = 'Rock'
@@ -57,9 +54,11 @@ while True:
 
     #step8: Asking user wish to continue
     Option = input('Do you want to play again? \n 1. Yes \n 2. No \n')
-    if Option != 1 or Option != 2:
-        print('Invalid choice. Please try again!')
-    elif Option == 2:
+    while Option != 1 or Option != 2:
+        Option = input('Invalid choice. Please enter your choice again: ')
+    if Option == 1:
+        print('Get ready for the next round!')
+    else:
         break
 
 #step9: Thanking the player after coming out the while loop
