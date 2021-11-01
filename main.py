@@ -16,7 +16,8 @@ while True:
         print('Good luck ' + user) 
     else:
         while player_choice != 'a' or player_choice != 'b' or player_choice !=  'c':
-            player_choice = input('Invalid choice. Please enter your choice again: ').lower()   
+            player_choice = input('Invalid choice. Please enter your choice again: ').lower()  
+            break;
           
     # Step4: Initializing value of choice_name variable corresponding to the choice value
     if player_choice == 'a':
